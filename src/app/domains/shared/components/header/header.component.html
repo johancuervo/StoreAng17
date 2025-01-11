@@ -49,7 +49,7 @@
   <div class="shopping-cart mx-auto max-w-md p-4 bg-white shadow-md rounded-md">
   
     <div *ngFor="let product of cart()" class="product flex items-center border-b border-gray-200 py-4">
-      <img [src]="product.image" alt="Product" class="w-16 h-16 rounded-lg object-cover mr-4" />
+      <img [src]="product.images[0]" alt="Product" class="w-16 h-16 rounded-lg object-cover mr-4" />
       <div class="product-info flex-1">
         <h3 class="text-lg font-semibold">{{ product.title }}</h3>
         <p class="text-gray-500 text-sm">${{ product.price.toFixed(2) }}</p>
