@@ -1,0 +1,10 @@
+<div class="px-10">
+    <h1 class="text-lg font-bold">About</h1>
+    <p class="text-xs">
+        This is a simple Angular application that demonstrates how to use the Web Audio API to visualize audio data.
+    </p>
+    <p class="text-xs">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration()>0" /></p>
+    <div>
+        <app-wave-audio audioUrl="assets/drumSolo.mp3"/>
+    </div>
+</div>
